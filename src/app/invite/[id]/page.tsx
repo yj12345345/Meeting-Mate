@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 type Props = { params: { id: string } };
 
-export default function InvitePage({ params }: Props) {
+export default function InvitePage({ params }: { params: { id: string } }) {
   const meetingId = params.id;
 
   // 날짜 여러 개
